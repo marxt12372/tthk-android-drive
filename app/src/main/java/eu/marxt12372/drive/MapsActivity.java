@@ -33,6 +33,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng tallinn = new LatLng(59.437041, 24.753463); //Tallinn
         //mMap.addMarker(new MarkerOptions().position(pos).title("nimi"));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(tallinn, 13f));
+
         Thread updaterThread = new MapUpdaterThread(mMap);
         updaterThread.start();
     }
