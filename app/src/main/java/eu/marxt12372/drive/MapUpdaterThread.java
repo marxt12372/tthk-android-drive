@@ -34,7 +34,7 @@ public class MapUpdaterThread extends Thread
 			}});
 
 			//TODO: Noh, tee midagi siin siis?
-			//TODO: http://marxt12372.eu/tthk-android-drive/api/
+			//TODO: http://marxt12372.eu/tthk-android-drive/
 			try
 			{
 				Thread.sleep(1000);
