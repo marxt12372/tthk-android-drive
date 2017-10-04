@@ -109,18 +109,22 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="support-core-ui-26.1.0" level="project" />
     <orderEntry type="library" name="support-media-compat-26.1.0" level="project" />
+    <orderEntry type="library" name="constraint-layout-1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="hamcrest-library-1.3" level="project" />
+    <orderEntry type="library" name="recyclerview-v7-26.1.0" level="project" />
     <orderEntry type="library" name="support-vector-drawable-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="hamcrest-integration-1.3" level="project" />
     <orderEntry type="library" name="support-core-utils-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="espresso-core-3.0.1" level="project" />
     <orderEntry type="library" scope="TEST" name="espresso-idling-resource-3.0.1" level="project" />
     <orderEntry type="library" name="play-services-basement-11.4.0" level="project" />
+    <orderEntry type="library" name="transition-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="jsr305-2.0.1" level="project" />
     <orderEntry type="library" name="play-services-base-11.4.0" level="project" />
     <orderEntry type="library" scope="TEST" name="runner-1.0.1" level="project" />
     <orderEntry type="library" name="play-services-maps-11.4.0" level="project" />
     <orderEntry type="library" name="support-compat-26.1.0" level="project" />
+    <orderEntry type="library" name="constraint-layout-solver-1.0.2" level="project" />
     <orderEntry type="library" scope="TEST" name="javax.inject-1" level="project" />
     <orderEntry type="library" name="support-annotations-26.1.0" level="project" />
     <orderEntry type="library" name="support-v4-26.1.0" level="project" />
@@ -134,6 +138,7 @@
     <orderEntry type="library" name="appcompat-v7-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="hamcrest-core-1.3" level="project" />
     <orderEntry type="library" scope="TEST" name="junit-4.12" level="project" />
+    <orderEntry type="library" name="design-26.1.0" level="project" />
     <orderEntry type="library" scope="TEST" name="rules-1.0.1" level="project" />
     <orderEntry type="library" name="play-services-tasks-11.4.0" level="project" />
   </component>
