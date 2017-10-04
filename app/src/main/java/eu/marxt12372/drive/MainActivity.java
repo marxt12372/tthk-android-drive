@@ -1,5 +1,6 @@
 package eu.marxt12372.drive;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,6 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -22,6 +25,8 @@ import com.google.android.gms.maps.model.LatLng;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
 	private GoogleMap mMap;
+	ImageView nav_header_picture;
+	TextView nav_header_text;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +36,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		setSupportActionBar(toolbar);
 
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-				this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 		drawer.addDrawerListener(toggle);
 		toggle.syncState();
 
@@ -42,6 +46,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map);
 		mapFragment.getMapAsync(this);
+
+		nav_header_picture = (ImageView) findViewById(R.id.nav_header_picture);
+		nav_header_text = (TextView) findViewById(R.id.nav_header_text);
+		login();
+	}
+
+	public void login()
+	{
+		DBHandler dbHandler = new DBHandler(getApplicationContext());
+		String username = dbHandler.getLoginInfo(DBHandler.LOGIN_INFO_USERNAME);
+		String password = dbHandler.getLoginInfo(DBHandler.LOGIN_INFO_PASSWORD);
+		boolean success = APIContactor.attemptLogin(username, password);
+		if(success)
+		{
+		}
+		else
+		{
+			Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+			startActivity(intent);
+			finish();
+		}
 	}
 
 	@Override
@@ -57,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		//getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 

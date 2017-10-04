@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DBHandler extends SQLiteOpenHelper
 {
-	public final int LOGIN_INFO_USERNAME = 1;
-	public final int LOGIN_INFO_PASSWORD = 2;
+	public static final int LOGIN_INFO_USERNAME = 1;
+	public static final int LOGIN_INFO_PASSWORD = 2;
 
 	public DBHandler(Context context)
 	{
