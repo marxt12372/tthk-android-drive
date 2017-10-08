@@ -1,9 +1,13 @@
 package eu.marxt12372.drive;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,6 +25,8 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+
+import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
@@ -43,12 +49,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 		navigationView.setNavigationItemSelectedListener(this);
 
+		View header=navigationView.getHeaderView(0);
+		nav_header_picture = (ImageView) header.findViewById(R.id.nav_header_picture);
+		nav_header_text = (TextView) header.findViewById(R.id.nav_header_text);
+
 		SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map);
 		mapFragment.getMapAsync(this);
 
-		nav_header_picture = (ImageView) findViewById(R.id.nav_header_picture);
-		nav_header_text = (TextView) findViewById(R.id.nav_header_text);
+
+
 		login();
 	}
 
@@ -60,6 +70,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		boolean success = APIContactor.attemptLogin(username, password);
 		if(success)
 		{
+			nav_header_text.setText(APIContactor.getRealName());
+			new DownloadImageTask(nav_header_picture).execute(APIContactor.getPictureUrl());
 		}
 		else
 		{
@@ -132,8 +144,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		LatLng tallinn = new LatLng(59.437041, 24.753463); //Tallinn
 		//mMap.addMarker(new MarkerOptions().position(pos).title("nimi"));
 		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(tallinn, 13f));
-
 		Thread updaterThread = new MapUpdaterThread(mMap);
 		updaterThread.start();
+	}
+}
+
+class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
+	ImageView bmImage;
+
+	public DownloadImageTask(ImageView bmImage) {
+		this.bmImage = bmImage;
+	}
+
+	protected Bitmap doInBackground(String... urls) {
+		String urldisplay = urls[0];
+		Bitmap mIcon11 = null;
+		try {
+			InputStream in = new java.net.URL(urldisplay).openStream();
+			mIcon11 = BitmapFactory.decodeStream(in);
+		} catch (Exception e) {
+			Log.e("Error", e.getMessage());
+			e.printStackTrace();
+		}
+		return mIcon11;
+	}
+
+	protected void onPostExecute(Bitmap result) {
+		bmImage.setImageBitmap(result);
 	}
 }

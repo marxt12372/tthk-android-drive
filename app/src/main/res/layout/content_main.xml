@@ -15,7 +15,7 @@
 		android:name="com.google.android.gms.maps.SupportMapFragment"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		tools:context="eu.marxt12372.drive.MapsActivity" />
+		tools:context="eu.marxt12372.drive.MainActivity" />
 
 
 </android.support.constraint.ConstraintLayout>

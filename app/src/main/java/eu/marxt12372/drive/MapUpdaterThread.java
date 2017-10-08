@@ -2,6 +2,7 @@ package eu.marxt12372.drive;
 
 import android.content.Context;
 import android.os.Handler;
+import android.util.Log;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
@@ -25,16 +26,24 @@ public class MapUpdaterThread extends Thread
 			mainHandler.post(new Runnable(){public void run(){
 				_map.clear();
 
-				MarkerOptions marker = new MarkerOptions();
-				marker.position(new LatLng(0,0));
-				marker.title("abcd");
-				_map.addMarker(marker);
-				//Marker add teha siin.
-				//Network koodi siin jooksutada ei saa tõenäoliselt.
+				String driverlist = APIContactor.getDrivers();
+				if(driverlist.contains(";"))
+				{
+					String[] drivers = driverlist.split(";");
+					for (String driver : drivers)
+					{
+						if (driver.contains("-"))
+						{
+							String[] data = driver.split("-");
+							MarkerOptions marker = new MarkerOptions();
+							marker.position(new LatLng(Double.parseDouble(data[0]), Double.parseDouble(data[1])));
+							marker.title("Takso");
+							_map.addMarker(marker);
+						}
+					}
+				}
 			}});
 
-			//TODO: Noh, tee midagi siin siis?
-			//TODO: http://marxt12372.eu/tthk-android-drive/
 			try
 			{
 				Thread.sleep(1000);

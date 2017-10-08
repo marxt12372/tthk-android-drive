@@ -13,7 +13,7 @@ public class DBHandler extends SQLiteOpenHelper
 
 	public DBHandler(Context context)
 	{
-		super(context, "andmebaas", null, 2);
+		super(context, "andmebaas", null, 4);
 	}
 
 	public void onCreate(SQLiteDatabase db)
@@ -55,22 +55,4 @@ public class DBHandler extends SQLiteOpenHelper
 		}
 		return "NULL";
 	}
-
-	/*public int getMaxScore()
-	{
-		int maxScore = 0;
-		SQLiteDatabase db = getReadableDatabase();
-		Cursor c = db.rawQuery("SELECT * FROM score WHERE id = 1;", null);
-		c.moveToFirst();
-		maxScore = c.getInt(c.getColumnIndex("score"));
-		db.close();
-		return maxScore;
-	}
-
-	public void setMaxScore(int newMaxScore)
-	{
-		SQLiteDatabase db = getWritableDatabase();
-		db.execSQL("UPDATE score SET score = " + newMaxScore + " WHERE id = 1;");
-		db.close();
-	}*/
 }
