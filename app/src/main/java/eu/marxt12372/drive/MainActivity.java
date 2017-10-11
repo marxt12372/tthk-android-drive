@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		mapFragment.getMapAsync(this);
 
 
-
 		login();
 	}
 
@@ -121,14 +120,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 		if (id == R.id.nav_myaccount)
 		{
+			Intent intent = new Intent(getApplicationContext(), MyAccount.class);
+			startActivity(intent);
 		}
 		else if (id == R.id.nav_mydrives)
 		{
-
+			Intent intent = new Intent(getApplicationContext(), MyDrives.class);
+			startActivity(intent);
 		}
 		else if (id == R.id.nav_logout)
 		{
-
+			DBHandler dbHandler = new DBHandler(getApplicationContext());
+			dbHandler.setLoginInfo("NULL", "NULL");
+			login();
 		}
 
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

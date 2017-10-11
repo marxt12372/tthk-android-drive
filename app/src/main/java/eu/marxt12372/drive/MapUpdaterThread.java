@@ -44,7 +44,8 @@ public class MapUpdaterThread extends Thread
 							marker.position(new LatLng(Double.parseDouble(data[0]), Double.parseDouble(data[1])));
 							marker.title("Takso");
 							marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.taxi));
-							//marker.rotation(random.nextInt(359));
+							marker.anchor(0.5f, 0.5f);
+							marker.rotation(random.nextInt(359));
 							_map.addMarker(marker);
 						}
 					}

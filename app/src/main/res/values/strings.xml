@@ -30,4 +30,6 @@
 	<string name="logout">Logi Välja</string>
 
 	<string name="action_settings">Settings</string>
+	<string name="title_activity_my_drives">MyDrives</string>
+	<string name="title_activity_my_account">MyAccount</string>
 </resources>
