@@ -5,8 +5,12 @@ import android.os.Handler;
 import android.util.Log;
 
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.BitmapDescriptor;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.Random;
 
 public class MapUpdaterThread extends Thread
 {
@@ -21,6 +25,7 @@ public class MapUpdaterThread extends Thread
 
     public void run()
     {
+    	final Random random = new Random();
 		while(true)
 		{
 			mainHandler.post(new Runnable(){public void run(){
@@ -38,6 +43,8 @@ public class MapUpdaterThread extends Thread
 							MarkerOptions marker = new MarkerOptions();
 							marker.position(new LatLng(Double.parseDouble(data[0]), Double.parseDouble(data[1])));
 							marker.title("Takso");
+							marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.taxi));
+							//marker.rotation(random.nextInt(359));
 							_map.addMarker(marker);
 						}
 					}
@@ -46,7 +53,7 @@ public class MapUpdaterThread extends Thread
 
 			try
 			{
-				Thread.sleep(1000);
+				Thread.sleep(10000);
 			}
 			catch(InterruptedException e)
 			{

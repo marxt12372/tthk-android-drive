@@ -25,5 +25,9 @@
 	<string name="username">Kasutajanimi</string>
 	<string name="password">Parool</string>
 
+	<string name="myaccount">Minu konto</string>
+	<string name="mydrives">Minu sõidud</string>
+	<string name="logout">Logi Välja</string>
+
 	<string name="action_settings">Settings</string>
 </resources>
