@@ -40,8 +40,6 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".LoginActivity" />
-		<activity android:name=".RegisterActivity" />
 		<activity
 			android:name=".MyDrives"
 			android:label="@string/title_activity_my_drives"
@@ -49,6 +47,14 @@
 		<activity
 			android:name=".MyAccount"
 			android:label="@string/title_activity_my_account"
+			android:theme="@style/AppTheme.NoActionBar"></activity>
+		<activity
+			android:name=".LoginActivity"
+			android:label="@string/title_activity_login"
+			android:theme="@style/AppTheme.NoActionBar"></activity>
+		<activity
+			android:name=".RegisterActivity"
+			android:label="@string/title_activity_register"
 			android:theme="@style/AppTheme.NoActionBar"></activity>
 	</application>
 
