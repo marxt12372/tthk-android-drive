@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	private GoogleMap mMap;
 	ImageView nav_header_picture;
 	TextView nav_header_text;
+
+	Button findgps;
+	Button orderTaxi;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -53,12 +57,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		nav_header_picture = (ImageView) header.findViewById(R.id.nav_header_picture);
 		nav_header_text = (TextView) header.findViewById(R.id.nav_header_text);
 
+		findgps = (Button) findViewById(R.id.findgpsbutton);
+		orderTaxi = (Button) findViewById(R.id.tellibtn);
+
 		SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map);
 		mapFragment.getMapAsync(this);
 
 
 		login();
+
+		findgps.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+
+			}
+		});
+
+		orderTaxi.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				double mylat = mMap.getCameraPosition().target.latitude;
+				double mylng = mMap.getCameraPosition().target.longitude;
+				Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
+			}
+		});
 	}
 
 	public void login()
