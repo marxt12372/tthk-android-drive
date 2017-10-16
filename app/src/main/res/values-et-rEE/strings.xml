@@ -13,4 +13,6 @@
 	<string name="title_activity_my_account">Minu Konto</string>
 	<string name="title_activity_login">Logi Sisse</string>
 	<string name="title_activity_register">Registreeru</string>
+	<string name="findgps">Leia Asukoht</string>
+	<string name="ordertaxi">Telli Takso</string>
 </resources>
