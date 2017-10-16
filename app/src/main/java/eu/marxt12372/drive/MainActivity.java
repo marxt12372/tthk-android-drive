@@ -1,8 +1,12 @@
 package eu.marxt12372.drive;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -21,6 +25,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -64,13 +69,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 				.findFragmentById(R.id.map);
 		mapFragment.getMapAsync(this);
 
-
 		login();
 
 		findgps.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
+				try {
+					LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+					Location loc = locationManager.getLastKnownLocation(locationManager.getBestProvider(new Criteria(), false));
+					double latitude = 0.0;
+					double longitude = 0.0;
+					CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(loc.getLatitude(), loc.getLongitude()));
+					CameraUpdate zoom=CameraUpdateFactory.zoomTo(10f);
 
+					mMap.moveCamera(center);
+					mMap.animateCamera(zoom);
+				}
+				catch (SecurityException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 
