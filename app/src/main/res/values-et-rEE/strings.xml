@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Drive</string>
+	<string name="logintxt">Logi Sisse</string>
+	<string name="username">Kasutajanimi</string>
+	<string name="password">Parool</string>
+	<string name="myaccount">Minu konto</string>
+	<string name="logout">Logi Välja</string>
+	<string name="mydrives">Minu sõidud</string>
+	<string name="noaccout">Konto Puudub?</string>
+	<string name="title_activity_main">Drive</string>
+	<string name="title_activity_my_drives">Minu Sõidud</string>
+	<string name="title_activity_my_account">Minu Konto</string>
+	<string name="title_activity_login">Logi Sisse</string>
+	<string name="title_activity_register">Registreeru</string>
+</resources>
