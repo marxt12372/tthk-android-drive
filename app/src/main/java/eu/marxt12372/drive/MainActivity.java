@@ -6,9 +6,11 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Looper;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
@@ -25,12 +27,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.io.InputStream;
 
@@ -74,31 +79,51 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		findgps.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				try {
-					LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-					Location loc = locationManager.getLastKnownLocation(locationManager.getBestProvider(new Criteria(), false));
-					double latitude = 0.0;
-					double longitude = 0.0;
-					CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(loc.getLatitude(), loc.getLongitude()));
-					CameraUpdate zoom=CameraUpdateFactory.zoomTo(10f);
+			try {
+				LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 
-					mMap.moveCamera(center);
-					mMap.animateCamera(zoom);
-				}
-				catch (SecurityException e) {
-					e.printStackTrace();
-				}
+				LocationListener locationListener = new LocationListener() {
+					public void onLocationChanged(Location location) {
+						setCameraPosition(location, 17f);
+					}
+
+					public void onStatusChanged(String provider, int status, Bundle extras) {}
+					public void onProviderEnabled(String provider) {}
+					public void onProviderDisabled(String provider) {}
+				};
+
+				//locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+				Criteria crit = new Criteria();
+				crit.setAccuracy(Criteria.ACCURACY_FINE);
+				locationManager.requestSingleUpdate(crit, locationListener, null);
+
+			}
+			catch (SecurityException e) {
+				e.printStackTrace();
+			}
 			}
 		});
 
 		orderTaxi.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				double mylat = mMap.getCameraPosition().target.latitude;
-				double mylng = mMap.getCameraPosition().target.longitude;
-				Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
+			double mylat = mMap.getCameraPosition().target.latitude;
+			double mylng = mMap.getCameraPosition().target.longitude;
+			Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
 			}
 		});
+	}
+
+	public void setCameraPosition(Location loc, float zoomlvl)
+	{
+		if(loc != null)
+		{
+			CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(loc.getLatitude(), loc.getLongitude()));
+			CameraUpdate zoom = CameraUpdateFactory.zoomTo(zoomlvl);
+
+			mMap.moveCamera(center);
+			mMap.animateCamera(zoom);
+		}
 	}
 
 	public void login()
