@@ -22,6 +22,12 @@ public class APIContactor
 	{
 	}
 
+	public static void orderTaxi(double lat, double lng)
+	{
+		String uri = APIUrl + "/orderTaxi.php?apikey=" + apiToken + "&lat=" + lat + "&lng=" + lng;
+		sendRequest(uri);
+	}
+
 	public static boolean attemptLogin(String username, String password)
 	{
 		String uri = APIUrl + "/login.php?user=" + username + "&pass=" + password;

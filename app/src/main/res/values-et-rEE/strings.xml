@@ -15,4 +15,5 @@
 	<string name="title_activity_register">Registreeru</string>
 	<string name="findgps">Leia Asukoht</string>
 	<string name="ordertaxi">Telli Takso</string>
+	<string name="loading_str">Laadimine...</string>
 </resources>

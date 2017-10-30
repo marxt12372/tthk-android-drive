@@ -21,5 +21,6 @@
 	<string name="title_activity_register">Register</string>
 	<string name="findgps">Find Position</string>
 	<string name="ordertaxi">Order Taxi</string>
+	<string name="loading_str">Loading...</string>
 
 </resources>
