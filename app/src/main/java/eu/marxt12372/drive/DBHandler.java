@@ -13,7 +13,7 @@ public class DBHandler extends SQLiteOpenHelper
 
 	public DBHandler(Context context)
 	{
-		super(context, "andmebaas", null, 4);
+		super(context, "andmebaas", null, 5);
 	}
 
 	public void onCreate(SQLiteDatabase db)

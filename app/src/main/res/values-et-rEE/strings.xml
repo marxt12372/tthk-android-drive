@@ -16,4 +16,10 @@
 	<string name="findgps">Leia Asukoht</string>
 	<string name="ordertaxi">Telli Takso</string>
 	<string name="loading_str">Laadimine...</string>
+	<string name="passwdmatch">Paroolid ei klapi</string>
+	<string name="nametxt">Nimi</string>
+	<string name="haveaccount">Konto juba olemas?</string>
+	<string name="email">E-Mail</string>
+	<string name="password2">Korda Parooli</string>
+	<string name="registertxt">Registreeru</string>
 </resources>

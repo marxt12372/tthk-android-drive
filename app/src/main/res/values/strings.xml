@@ -22,5 +22,11 @@
 	<string name="findgps">Find Position</string>
 	<string name="ordertaxi">Order Taxi</string>
 	<string name="loading_str">Loading...</string>
+	<string name="registertxt">Register</string>
+	<string name="password2">Repeat Password</string>
+	<string name="email">E-Mail</string>
+	<string name="haveaccount">Already have an account?</string>
+	<string name="nametxt">Name</string>
+	<string name="passwdmatch">Passwords dosen\'t match</string>
 
 </resources>

@@ -41,6 +41,12 @@ public class APIContactor
 		return false;
 	}
 
+	public static void createAccount(String username, String password, String email, String realname)
+	{
+		String uri = APIUrl + "/register.php?user=" + username + "&pass=" + password + "&email=" + email + "&realname=" + realname;
+		sendRequest(uri);
+	}
+
 	public static String getDrivers()
 	{
 		String uri = APIUrl + "/getDrivers.php?apikey=" + apiToken;
