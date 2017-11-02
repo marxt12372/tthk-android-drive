@@ -7,7 +7,7 @@
 	<string name="myaccount">Minu konto</string>
 	<string name="logout">Logi Välja</string>
 	<string name="mydrives">Minu sõidud</string>
-	<string name="noaccout">Konto Puudub?</string>
+	<string name="noaccount">Konto Puudub?</string>
 	<string name="title_activity_main">Drive</string>
 	<string name="title_activity_my_drives">Minu Sõidud</string>
 	<string name="title_activity_my_account">Minu Konto</string>
