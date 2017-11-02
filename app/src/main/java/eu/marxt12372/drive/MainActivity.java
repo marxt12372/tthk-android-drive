@@ -131,7 +131,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			double mylat = mMap.getCameraPosition().target.latitude;
 			double mylng = mMap.getCameraPosition().target.longitude;
 			APIContactor.orderTaxi(mylat, mylng);
-				//loading_spinner.setVisibility(ImageView.VISIBLE);
 			Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
 			}
 		});

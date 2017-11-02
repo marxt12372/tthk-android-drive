@@ -43,7 +43,14 @@ public class MapUpdaterThread extends Thread
 							MarkerOptions marker = new MarkerOptions();
 							marker.position(new LatLng(Double.parseDouble(data[0]), Double.parseDouble(data[1])));
 							marker.title("Takso");
-							marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.taxi));
+							if(data[2] == "1")
+							{
+								marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.mytaxi));
+							}
+							else
+							{
+								marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.taxi));
+							}
 							marker.anchor(0.5f, 0.5f);
 							marker.rotation(random.nextInt(359));
 							_map.addMarker(marker);
