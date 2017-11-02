@@ -43,7 +43,7 @@ public class MapUpdaterThread extends Thread
 							MarkerOptions marker = new MarkerOptions();
 							marker.position(new LatLng(Double.parseDouble(data[0]), Double.parseDouble(data[1])));
 							marker.title("Takso");
-							if(data[2] == "1")
+							if(data[2].equals("1"))
 							{
 								marker.icon(BitmapDescriptorFactory.fromResource(R.mipmap.mytaxi));
 							}
