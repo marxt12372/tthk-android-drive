@@ -1,7 +1,7 @@
 <?php
 
 define('IN_API', '1');
-define('API', 'driveUpdate');
+define('API', 'orderUpdate');
 
 require 'inc/config.php';
 
@@ -12,7 +12,8 @@ $time = time() - (60*60*24);
 $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad WHERE `apitoken` = '" . $key . "' AND `apilastuse` > '" . $time . "'");
 if($query->num_rows == 1)
 {
-	//TODO: Kui ta on taksojuhi requestind, siis vaata, kas juht on leitud. Kui on, siis ytle talle seda.
+	//TODO: Uuenda orderite asju. Nt:
+	//TODO: Kui sÃit on l6ppenud, katkestatud, s6itja peale v6etud
 }
 
 $mysqli->close();

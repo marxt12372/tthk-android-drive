@@ -15,7 +15,14 @@ if($query->num_rows == 1)
 	$row = $query->fetch_assoc();
 	$lat = $mysqli->escape_string($_GET['lat']);
 	$lng = $mysqli->escape_string($_GET['lng']);
+
 	$query2 = $mysqli->query("INSERT INTO " . $mysql['pref'] . "soidud (`kasutaja`, `s6idutaja`, `alguslat`, `alguslng`, `lopplat`, `lopplng`, `staatus`, `driversTryed`) VALUES ('" . $row['sqlid'] . "', '0', '" . $lat . "', '" . $lng . "', '0.0', '0.0', '0', '')");
+
+	echo 'driver_requested';
+}
+else
+{
+	echo 'error';
 }
 
 $mysqli->close();
