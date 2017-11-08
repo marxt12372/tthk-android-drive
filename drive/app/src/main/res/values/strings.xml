@@ -1,0 +1,32 @@
+<resources>
+	<string name="app_name">Drive</string>
+
+	<!-- Strings related to login -->
+
+	<string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+	<string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+	<string name="logintxt">Sign In</string>
+	<string name="noaccount">No Account?</string>
+	<string name="username">Username</string>
+	<string name="password">Password</string>
+
+	<string name="myaccount">My Account</string>
+	<string name="mydrives">My Drives</string>
+	<string name="logout">Log out</string>
+	<string name="title_activity_main">Drive</string>
+	<string name="title_activity_my_drives">My Drives</string>
+	<string name="title_activity_my_account">My Account</string>
+	<string name="title_activity_login">Login</string>
+	<string name="title_activity_register">Register</string>
+	<string name="findgps">Find Position</string>
+	<string name="ordertaxi">Order Taxi</string>
+	<string name="loading_str">Loading...</string>
+	<string name="registertxt">Register</string>
+	<string name="password2">Repeat Password</string>
+	<string name="email">E-Mail</string>
+	<string name="haveaccount">Already have an account?</string>
+	<string name="nametxt">Name</string>
+	<string name="passwdmatch">Passwords dosen\'t match</string>
+
+</resources>
