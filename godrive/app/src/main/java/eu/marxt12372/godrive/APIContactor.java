@@ -15,7 +15,7 @@ import java.util.concurrent.CountDownLatch;
 public class APIContactor
 {
 	public static String apiToken = "";
-	private static final String APIUrl = "http://marxt12372.eu/tthk-android-drive";
+	private static final String APIUrl = "http://marxt12372.eu/tthk-android-drive/api";
 	public static String out;
 
 	public APIContactor()
