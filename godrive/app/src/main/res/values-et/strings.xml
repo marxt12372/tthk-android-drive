@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">GoDrive</string>
+	<string name="logintxt">Logi Sisse</string>
+	<string name="noaccount">Konto uudub?</string>
+	<string name="username">Kasutajanimi</string>
+	<string name="password">Parool</string>
+	<string name="registertxt">Registreeru</string>
+	<string name="password2">Korda Parooli</string>
+	<string name="email">E-Mail</string>
+	<string name="haveaccount">Konto juba olemas?</string>
+	<string name="nametxt">Nimi</string>
+	<string name="passwdmatch">Paroolid ei klapi</string>
+</resources>
