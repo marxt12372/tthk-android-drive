@@ -22,6 +22,15 @@ public class APIContactor
 	{
 	}
 
+	public static void pullUpdates()
+	{
+		double lat = GPSThread.getLocation().getLatitude();
+		double lng = GPSThread.getLocation().getLongitude();
+
+		String uri = APIUrl + "/goDriveUpdate.php?apikey=" + apiToken + "&lat=" + lat + "&lng=" + lng;
+		String string = sendRequest(uri);
+	}
+
 	public static boolean attemptLogin(String username, String password)
 	{
 		String uri = APIUrl + "/login.php?user=" + username + "&pass=" + password;

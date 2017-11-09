@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
 		//TODO: Tee actionbari menüü, kus saab välja logida
 
 		login();
+
+		GPSThread gpsThread = new GPSThread(getApplicationContext());
+
+		Thread updateThread = new UpdatePuller();
+		updateThread.start();
 	}
 
 	public void login()
