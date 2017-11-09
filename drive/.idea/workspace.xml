@@ -10,81 +10,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="530c9b79-95cd-4594-bb7e-b774034a1e22" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/UpdatePuller.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-12-10-58-130.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-12-10-58-130.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-12-12-45-975.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-12-12-45-975.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-27-58-011.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-27-58-011.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-28-21-852.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-28-21-852.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-29-01-749.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-29-01-749.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-33-50-270.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-33-50-270.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-39-14-156.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-02-13-39-14-156.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-08-12-12-04-284.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-08-12-12-04-284.rawproto" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-08-12-12-15-162.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../godrive/build/android-profile/profile-2017-11-08-12-12-15-162.rawproto" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../godrive/app/src/debug/res/values/google_maps_api.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/tthk_android_godrive/DriveAcceptActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/layout/activity_drive_accept.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../godrive/app/src/release/res/values/google_maps_api.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/resourceHashesCache.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskJars.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskJars.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/build/generated/mockable-android-26.v3.jar" afterPath="$PROJECT_DIR$/../godrive/build/generated/mockable-android-26.v3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/constraint_layout_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_base_11_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_11_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_basement_11_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_11_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_maps_11_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_11_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_11_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_11_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rules_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rules_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runtime_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runtime_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/transition_26_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/transition_26_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/animated_vector_drawable_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/animated_vector_drawable_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/appcompat_v7_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/appcompat_v7_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/constraint_layout_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/espresso_core_3_0_1.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/espresso_core_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/espresso_idling_resource_3_0_1.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/espresso_idling_resource_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/rules_1_0_1.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/rules_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/runner_1_0_1.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/runner_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/runtime_1_0_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/runtime_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_compat_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_compat_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_core_ui_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_core_ui_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_core_utils_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_core_utils_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_fragment_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_fragment_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_media_compat_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_media_compat_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_v4_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_v4_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/libraries/support_vector_drawable_26_1_0.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/libraries/support_vector_drawable_26_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/misc.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/app.iml" afterPath="$PROJECT_DIR$/../godrive/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/build.gradle" afterPath="$PROJECT_DIR$/../godrive/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/GPSThread.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/GPSThread.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/MainActivity.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/build.gradle" afterPath="$PROJECT_DIR$/../godrive/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,14 +62,14 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1004">
+            <state relative-caret-position="1980">
               <caret line="151" column="5" lean-forward="false" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapUpdaterThread.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapUpdaterThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/MapUpdaterThread.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
@@ -131,13 +82,23 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="75">
+              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="54" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-manifest">
             <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="google_maps_api.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="22" column="128" lean-forward="false" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="128" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -157,7 +118,7 @@
       <file leaf-file-name="APIContactor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/APIContactor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
+            <state relative-caret-position="144">
               <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
               <folding />
             </state>
@@ -1951,9 +1912,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="27" />
-    <option name="width" value="1366" />
-    <option name="height" value="741" />
+    <option name="x" value="116" />
+    <option name="y" value="95" />
+    <option name="width" value="1356" />
+    <option name="height" value="555" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1973,8 +1935,8 @@
     <panes>
       <pane id="ProjectPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1986,19 +1948,13 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="drive" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -2011,12 +1967,36 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidSourceTypeNode" />
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="drive" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidPsiDirectoryNode" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drive" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.android.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2126,7 +2106,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510210414703" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510215830048" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2173,7 +2153,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510210414704" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510215830048" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2334,7 +2314,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510210414706" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510215830049" />
       </method>
     </configuration>
     <list size="1">
@@ -2593,7 +2573,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <frame x="116" y="95" width="1356" height="555" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2612,7 +2592,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22989377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23165138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -2727,13 +2707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="129" lean-forward="false" selection-start-line="22" selection-start-column="129" selection-end-line="22" selection-end-column="129" />
         </state>
       </provider>
     </entry>
@@ -2951,19 +2924,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="19" column="37" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
@@ -3015,7 +2976,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/APIContactor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
+        <state relative-caret-position="144">
           <caret line="17" column="85" lean-forward="false" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
           <folding />
         </state>
@@ -3023,7 +2984,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1004">
+        <state relative-caret-position="1980">
           <caret line="151" column="5" lean-forward="false" selection-start-line="151" selection-start-column="5" selection-end-line="151" selection-end-column="5" />
           <folding />
         </state>
@@ -3033,6 +2994,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/debug/res/values/google_maps_api.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="22" column="128" lean-forward="false" selection-start-line="22" selection-start-column="89" selection-end-line="22" selection-end-column="128" />
           <folding />
         </state>
       </provider>

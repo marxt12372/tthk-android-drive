@@ -24,11 +24,16 @@ public class APIContactor
 
 	public static void pullUpdates()
 	{
-		double lat = GPSThread.getLocation().getLatitude();
-		double lng = GPSThread.getLocation().getLongitude();
-
-		String uri = APIUrl + "/goDriveUpdate.php?apikey=" + apiToken + "&lat=" + lat + "&lng=" + lng;
-		String string = sendRequest(uri);
+		if(GPSThread.getLocation() != null) {
+			double lat = GPSThread.getLocation().getLatitude();
+			double lng = GPSThread.getLocation().getLongitude();
+			String uri = APIUrl + "/goDriveUpdate.php?apikey=" + apiToken + "&lat=" + lat + "&lng=" + lng;
+			String string = sendRequest(uri);
+			if(string.contains("uus_soitja"))
+			{
+				String[] info = string.split(";");
+			}
+		}
 	}
 
 	public static boolean attemptLogin(String username, String password)

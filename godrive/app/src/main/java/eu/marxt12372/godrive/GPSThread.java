@@ -6,6 +6,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.util.Log;
 
 public class GPSThread implements LocationListener
 {
@@ -16,13 +17,15 @@ public class GPSThread implements LocationListener
 	{
 		_locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
 		try {
-			_locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+			_locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1500, 2.5f, this);
+			_location = _locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
 		}
 		catch(SecurityException e)
 		{
-			//TODO:GPS ei ole lubatud. Tee midagi.
+			//TODO: GPS ei ole lubatud. Tee midagi.
 			e.printStackTrace();
 		}
+		Log.i("GPSThread", "GPSThread is now started");
 	}
 
 	public void onStatusChanged(String str, int num, Bundle bundle)
@@ -39,6 +42,7 @@ public class GPSThread implements LocationListener
 
 	public void onLocationChanged(Location location)
 	{
+		Log.i("LocationUpdater", "Lat: " + location.getLatitude() + ", Lng: " + location.getLongitude());
 		_location = location;
 	}
 
