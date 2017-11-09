@@ -18,6 +18,13 @@ while($row = $query->fetch_assoc())
 	}
 }
 
+$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad");
+while($row = $query->fetch_assoc())
+{
+	//TODO: Vaada viimase uuenduse aega ja staatust. Kui aeg on lähedal ja staatus null, pane staatus üheks.
+	//TODO: Kui viimane update on 10s tagasi ja staatus 1, pane staatus nulli.
+}
+
 function getClosestDriverNotInList($lat, $lng, $list)
 {
 	$lastDistance = 10000000;

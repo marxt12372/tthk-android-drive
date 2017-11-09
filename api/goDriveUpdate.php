@@ -12,7 +12,7 @@ $time = time() - (60*60*24);
 $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad WHERE `apitoken` = '" . $key . "' AND `apilastuse` > '" . $time . "'");
 if($query->num_rows == 1)
 {
-	//TODO: Uuenda taksojuhi positsiooni sqlis.
+	//TODO: Uuenda taksojuhi positsiooni sqlis ja viimase update aega.
 	//TODO: Otsi uuendusi asjadele. Nt kui talle on m22ratud uus s6it
 }
 

@@ -10,8 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40f8e6e0-1ce8-4f2b-9ab1-8b6ef12a4fdd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-52-51-783.rawproto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-03-229.rawproto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-06-587.rawproto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-14-663.rawproto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-11-09-08-47-58-194.rawproto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-52-51-783.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-03-229.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-06-587.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../drive/build/android-profile/profile-2017-11-09-08-53-14-663.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/GPSThread.java" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/UpdatePuller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-11-09-08-47-58-194.json" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-02-12-10-58-130.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-02-12-10-58-130.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-02-12-12-45-975.json" afterPath="" />
@@ -30,6 +40,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-08-12-12-04-284.rawproto" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-08-12-12-15-162.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/android-profile/profile-2017-11-08-12-12-15-162.rawproto" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/cronUpdater.php" afterPath="$PROJECT_DIR$/../api/cronUpdater.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/fileSnapshots.bin" />
@@ -41,6 +52,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-26.v3.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-26.v3.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api/goDriveUpdate.php" afterPath="$PROJECT_DIR$/../api/goDriveUpdate.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.idea/libraries/animated_vector_drawable_26_1_0.xml" afterPath="$PROJECT_DIR$/../drive/.idea/libraries/animated_vector_drawable_26_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.idea/libraries/appcompat_v7_26_1_0.xml" afterPath="$PROJECT_DIR$/../drive/.idea/libraries/appcompat_v7_26_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.idea/libraries/constraint_layout_1_0_2.xml" afterPath="$PROJECT_DIR$/../drive/.idea/libraries/constraint_layout_1_0_2.xml" />
@@ -2089,7 +2101,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211886776" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211951480" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2136,7 +2148,7 @@
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
       </Profilers>
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211886776" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211951481" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2318,7 +2330,7 @@
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
       <method>
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211886778" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1510211951485" />
       </method>
     </configuration>
     <list size="1">
@@ -2394,7 +2406,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2442,7 +2453,8 @@
     <MESSAGE value="Tehtud registreerumine" />
     <MESSAGE value="Struktuurimuudatusi" />
     <MESSAGE value="Api asjad" />
-    <option name="LAST_COMMIT_MESSAGE" value="Api asjad" />
+    <MESSAGE value="Tehtud godrive update ja gpsi asjad" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tehtud godrive update ja gpsi asjad" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
