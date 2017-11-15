@@ -10,4 +10,5 @@
 	<string name="haveaccount">Already have an Account?</string>
 	<string name="nametxt">Name</string>
 	<string name="passwdmatch">Passwords dosen\'t match</string>
+	<string name="title_activity_drive_accept">Accept Drive</string>
 </resources>
