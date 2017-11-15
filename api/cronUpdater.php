@@ -13,6 +13,7 @@ while($row = $query->fetch_assoc())
 	if($row['staatus'] == 0)
 	{
 		//TODO: Leia talle s6itja, kes ei ole proovitud s6itjate listis.
+		//TODO: Vaata, et s6itjal juba poleks aktiivset s6itu.
 		//TODO: Seadista staatus yheks.
 		//TODO: M√√ra viimase uuenduse aeg.
 	}
