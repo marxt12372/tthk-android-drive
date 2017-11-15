@@ -16,7 +16,7 @@ if($query->num_rows == 1)
 	$lat = $mysqli->escape_string($_GET['lat']);
 	$lng = $mysqli->escape_string($_GET['lng']);
 
-	$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '1', `lat` = '" . $lat . "', `lng` = '" . $lng . "' WHERE `apitoken` = '" . $key . "' AND `apilastuse` > '" . $time . "'");
+	$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '1', `lat` = '" . $lat . "', `lng` = '" . $lng . "', `lastUpdate` = '" . time() . "' WHERE `apitoken` = '" . $key . "' AND `apilastuse` > '" . $time . "'");
 
 	$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutajaData['sqlid'] . "' AND `staatus` = '1'");
 	while($row = $query->fetch_assoc())

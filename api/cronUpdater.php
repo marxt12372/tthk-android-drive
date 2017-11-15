@@ -22,8 +22,13 @@ while($row = $query->fetch_assoc())
 $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad");
 while($row = $query->fetch_assoc())
 {
-	//TODO: Vaada viimase uuenduse aega ja staatust. Kui aeg on lähedal ja staatus null, pane staatus üheks.
-	//TODO: Kui viimane update on 10s tagasi ja staatus 1, pane staatus nulli.
+	if($row['aktiivne'] == 1)
+	{
+		if(time() - $row['lastUpdate'] > 10)
+		{
+			$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '0', `lastUpdate` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
+		}
+	}
 }
 
 function getClosestDriverNotInList($lat, $lng, $list)
