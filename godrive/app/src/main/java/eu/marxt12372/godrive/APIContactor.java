@@ -1,6 +1,7 @@
 package eu.marxt12372.godrive;
 
 
+import android.content.Intent;
 import android.os.HandlerThread;
 import android.util.Log;
 
@@ -32,6 +33,14 @@ public class APIContactor
 			if(string.contains("uus_soitja"))
 			{
 				String[] info = string.split(";");
+				Intent intent = new Intent(MainActivity.context, DriveAcceptActivity.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				float drive_lat = Float.parseFloat(info[1]);
+				float drive_lng = Float.parseFloat(info[2]);
+				intent.putExtra("drive_lat", drive_lat);
+				intent.putExtra("drive_lng", drive_lng);
+				MainActivity.context.startActivity(intent);
+				Log.i("APIContactor", "Uus sõitja määratud.");
 			}
 		}
 	}

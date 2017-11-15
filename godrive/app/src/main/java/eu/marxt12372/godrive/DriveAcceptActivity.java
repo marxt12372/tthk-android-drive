@@ -1,8 +1,11 @@
 package eu.marxt12372.godrive;
 
+import android.content.Intent;
+import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -15,6 +18,8 @@ import eu.marxt12372.godrive.R;
 public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyCallback {
 
 	private GoogleMap mMap;
+	private float markerLocationLat;
+	private float markerLocationLng;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +29,10 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 		SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
 				.findFragmentById(R.id.map);
 		mapFragment.getMapAsync(this);
+
+		Intent intent = getIntent();
+		markerLocationLat = intent.getFloatExtra("drive_lat", 0.0f);
+		markerLocationLng = intent.getFloatExtra("drive_lng", 0.0f);
 	}
 
 
@@ -42,6 +51,14 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 
 		//TODO: Lisa marker sinna kus teda oodatakse....
 		// Add a marker in Sydney and move the camera
+		LatLng marker = new LatLng(markerLocationLat, markerLocationLng);
+		MarkerOptions murker = new MarkerOptions();
+		murker.position(marker);
+		murker.title("Klient");
+		mMap.addMarker(murker);
+		mMap.moveCamera(CameraUpdateFactory.newLatLng(marker));
+		CameraUpdate zoom = CameraUpdateFactory.zoomTo(17f);
+		mMap.animateCamera(zoom);
 		/*LatLng sydney = new LatLng(-34, 151);
 		mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 		mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/

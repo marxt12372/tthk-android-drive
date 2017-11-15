@@ -8,10 +8,13 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
 
+import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+
 public class GPSThread implements LocationListener
 {
 	LocationManager _locationManager;
 	private static Location _location;
+	public static boolean _providerStatus;
 
 	public GPSThread(Context context)
 	{
@@ -23,6 +26,7 @@ public class GPSThread implements LocationListener
 		catch(SecurityException e)
 		{
 			//TODO: GPS ei ole lubatud. Tee midagi.
+			Log.i("GPS Error", "GPS pole lubatud");
 			e.printStackTrace();
 		}
 		Log.i("GPSThread", "GPSThread is now started");
@@ -34,10 +38,12 @@ public class GPSThread implements LocationListener
 
 	public void onProviderEnabled(String str)
 	{
+		_providerStatus = true;
 	}
 
 	public void onProviderDisabled(String str)
 	{
+		_providerStatus = false;
 	}
 
 	public void onLocationChanged(Location location)
