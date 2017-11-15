@@ -24,9 +24,9 @@ while($row = $query->fetch_assoc())
 {
 	if($row['aktiivne'] == 1)
 	{
-		if(time() - $row['lastUpdate'] > 10)
+		if(time() - $row['apilastuse'] > 10)
 		{
-			$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '0', `lastUpdate` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
+			$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '0', `apilastuse` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
 		}
 	}
 }
