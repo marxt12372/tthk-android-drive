@@ -6,6 +6,7 @@ define('API', 'cronUpdater');
 require 'inc/config.php';
 
 $mysqli = new mysqli($mysql['host'], $mysql['user'], $mysql['pass'], $mysql['base']);
+global $mysqli;
 
 $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud");
 while($row = $query->fetch_assoc())
@@ -16,6 +17,16 @@ while($row = $query->fetch_assoc())
 		//TODO: Vaata, et s6itjal juba poleks aktiivset s6itu.
 		//TODO: Seadista staatus yheks.
 		//TODO: MÃÃra viimase uuenduse aeg.
+		$proovitudsoitjad = explode(',', $row['driversTryed']);
+		$driver = getClosestActiveDriverNotInList($row['alguslat'], $row['alguslng'], $proovitudsoitjad);
+		if($driver > 0)
+		{
+			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `s6idutaja` = '" . $driver . "', `staatus` = '1', `lastUpdate` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
+		}
+		else
+		{
+			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '998', `lastUpdate` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
+		}
 	}
 }
 
@@ -26,25 +37,30 @@ while($row = $query->fetch_assoc())
 	{
 		if(time() - $row['apilastuse'] > 10)
 		{
-			$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '0', `apilastuse` = '" . time() . "' WHERE `sqlid` = '" . $row['sqlid'] . "'");
+			$mysqli->query("UPDATE " . $mysql['pref'] . "kasutajad SET `aktiivne` = '0' WHERE `sqlid` = '" . $row['sqlid'] . "'");
 		}
 	}
 }
 
-function getClosestDriverNotInList($lat, $lng, $list)
+function getClosestActiveDriverNotInList($lat, $lng, $list)
 {
+	global $mysqli, $mysql;
 	$lastDistance = 10000000;
 	$lastDriver = -1;
 	$driverQuery = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad WHERE `aktiivne` = '1'");
 	while($row = $driverQuery->fetch_assoc())
 	{
-		if(!in_array($row['sqlid'], $list))
+		$aktiivseidS6ite = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE (`kasutaja` = '" . $row['sqlid'] . "' OR `s6idutaja` = '" . $row['sqlid'] . "') AND (`staatus` != '999' AND `staatus` != '998')");
+		if($aktiivseidS6ite->num_rows == 0)
 		{
-			$distance = getDistanceBetweenPoints($lat, $lng, $row['lat'], $row['lng']);
-			if($distance < $lastDistance)
+			if(!in_array($row['sqlid'], $list))
 			{
-				$lastDistance = $distance;
-				$lastDriver = $row['sqlid'];
+				$distance = getDistanceBetweenPoints($lat, $lng, $row['lat'], $row['lng']);
+				if($distance < $lastDistance)
+				{
+					$lastDistance = $distance;
+					$lastDriver = $row['sqlid'];
+				}
 			}
 		}
 	}
