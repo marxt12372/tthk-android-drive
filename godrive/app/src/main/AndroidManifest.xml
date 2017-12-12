@@ -3,7 +3,7 @@
 	package="eu.marxt12372.godrive">
 
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSELOCATION" />
 	<uses-permission android:name="android.permission.INTERNET" />
 
 	<application

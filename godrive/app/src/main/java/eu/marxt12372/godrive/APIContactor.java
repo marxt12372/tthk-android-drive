@@ -40,7 +40,7 @@ public class APIContactor
 				intent.putExtra("drive_lat", drive_lat);
 				intent.putExtra("drive_lng", drive_lng);
 				MainActivity.context.startActivity(intent);
-				Log.i("APIContactor", "Uus sõitja määratud.");
+				Log.i("APIContactor", "Uus sõitja määratud. " + string);
 			}
 		}
 	}

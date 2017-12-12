@@ -1,14 +1,19 @@
 package eu.marxt12372.godrive;
 
 
+import android.app.Activity;
 import android.content.Context;
+import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Looper;
+import android.support.annotation.NonNull;
 import android.util.Log;
 
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
+import java.util.List;
+
 
 public class GPSThread implements LocationListener
 {
@@ -21,7 +26,19 @@ public class GPSThread implements LocationListener
 		_locationManager = (LocationManager) context.getSystemService(Context.LOCATION_SERVICE);
 		try {
 			_locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1500, 2.5f, this);
-			_location = _locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+
+			List<String> providers = _locationManager.getProviders(true);
+			Location bestLocation = null;
+			for (String provider : providers) {
+				Location l = _locationManager.getLastKnownLocation(provider);
+				if (l == null) {
+					continue;
+				}
+				if (bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()) {
+					bestLocation = l;
+				}
+			}
+			_location = bestLocation;
 		}
 		catch(SecurityException e)
 		{
