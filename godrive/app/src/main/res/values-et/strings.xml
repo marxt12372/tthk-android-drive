@@ -11,4 +11,10 @@
 	<string name="haveaccount">Konto juba olemas?</string>
 	<string name="nametxt">Nimi</string>
 	<string name="passwdmatch">Paroolid ei klapi</string>
+	<string name="title_activity_drive_accept">Uus Klient</string>
+	<string name="drive_accept">Nõustu</string>
+	<string name="drive_deny">Keeldu</string>
+	<string name="drive_cancel">Katkesta sõit</string>
+	<string name="title_activity_current_drive">Hetkene Klient</string>
+	<string name="wait_for_client">Palun oota kuni klient vajab taksot.</string>
 </resources>

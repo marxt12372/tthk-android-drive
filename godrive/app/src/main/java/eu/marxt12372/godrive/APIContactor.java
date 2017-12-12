@@ -45,6 +45,14 @@ public class APIContactor
 		}
 	}
 
+	public static void cancelCurrentDrive()
+	{
+	}
+
+	public static void acceptCurrentDrive()
+	{
+	}
+
 	public static boolean attemptLogin(String username, String password)
 	{
 		String uri = APIUrl + "/login.php?user=" + username + "&pass=" + password;

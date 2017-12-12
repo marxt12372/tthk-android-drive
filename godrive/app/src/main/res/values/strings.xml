@@ -10,5 +10,10 @@
 	<string name="haveaccount">Already have an Account?</string>
 	<string name="nametxt">Name</string>
 	<string name="passwdmatch">Passwords dosen\'t match</string>
-	<string name="title_activity_drive_accept">Accept Drive</string>
+	<string name="title_activity_drive_accept">New Client</string>
+	<string name="drive_accept">Accept</string>
+	<string name="drive_deny">Deny</string>
+	<string name="title_activity_current_drive">CurrentDrive</string>
+	<string name="drive_cancel">Cancel Drive</string>
+	<string name="wait_for_client">Please wait for a client request to come in.</string>
 </resources>

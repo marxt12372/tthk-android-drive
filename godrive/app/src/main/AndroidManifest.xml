@@ -36,7 +36,11 @@
 
 		<activity
 			android:name=".DriveAcceptActivity"
-			android:label="@string/title_activity_drive_accept"></activity>
+			android:label="@string/title_activity_drive_accept" />
+		<activity
+			android:name=".CurrentDrive"
+			android:label="@string/title_activity_current_drive"
+			android:theme="@style/AppTheme.NoActionBar"></activity>
 	</application>
 
 </manifest>

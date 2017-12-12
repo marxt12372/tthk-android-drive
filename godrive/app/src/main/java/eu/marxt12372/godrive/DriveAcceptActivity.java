@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -21,6 +23,9 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 	private float markerLocationLat;
 	private float markerLocationLng;
 
+	private Button drive_accept;
+	private Button drive_deny;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,6 +38,26 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 		Intent intent = getIntent();
 		markerLocationLat = intent.getFloatExtra("drive_lat", 0.0f);
 		markerLocationLng = intent.getFloatExtra("drive_lng", 0.0f);
+
+		drive_accept = (Button) findViewById(R.id.drive_accept);
+		drive_deny = (Button) findViewById(R.id.drive_deny);
+
+		drive_accept.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				APIContactor.acceptCurrentDrive();
+				Intent intent = new Intent(getApplicationContext(), CurrentDrive.class);
+				getApplicationContext().startActivity(intent);
+				finish();
+			}
+		});
+
+		drive_deny.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+				APIContactor.cancelCurrentDrive();
+			}
+		});
 	}
 
 
