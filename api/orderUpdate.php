@@ -16,17 +16,24 @@ if($query->num_rows == 1)
 	$kasutaja = $query->fetch_assoc();
 	if($type == 1) //S6it on vastu v6etud
 	{
-		$s6it = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '2'")->fetch_assoc();
-		if($s6it != null && !empty($s6it))
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '2'");
+		if($query->num_rows > 0)
 		{
-			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '3' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
+			$s6it = $query->fetch_assoc();
+			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '3', `lastUpdate` = '" . time() . "' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
+			echo 'success';
+		}
+		else
+		{
+			echo 'fail';
 		}
 	}
 	else if($type == 2) //S6it on katkestatud/Mitte vastu v6etud
 	{
-		$s6it = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '2'")->fetch_assoc();
-		if($s6it != null && !empty($s6it))
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND (`staatus` != '999' AND `staatus` != '998')");
+		if($query->num_rows > 0)
 		{
+			$s6it = $query->fetch_assoc();
 			$list = "";
 			if(empty($s6it['driversTryed']))
 			{
