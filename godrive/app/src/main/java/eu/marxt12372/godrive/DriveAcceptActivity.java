@@ -46,9 +46,6 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 			@Override
 			public void onClick(View view) {
 				APIContactor.acceptCurrentDrive();
-				Intent intent = new Intent(getApplicationContext(), CurrentDrive.class);
-				getApplicationContext().startActivity(intent);
-				finish();
 			}
 		});
 
@@ -82,7 +79,7 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 		murker.title("Klient");
 		mMap.addMarker(murker);
 		mMap.moveCamera(CameraUpdateFactory.newLatLng(marker));
-		CameraUpdate zoom = CameraUpdateFactory.zoomTo(17f);
+		CameraUpdate zoom = CameraUpdateFactory.zoomTo(15f);
 		mMap.animateCamera(zoom);
 		/*LatLng sydney = new LatLng(-34, 151);
 		mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));

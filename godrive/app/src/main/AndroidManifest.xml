@@ -20,8 +20,8 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".LoginActivity" />
-		<activity android:name=".RegisterActivity" />
+		<activity android:name=".LoginActivity" android:noHistory="true" />
+		<activity android:name=".RegisterActivity" android:noHistory="true" />
 		<!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -36,11 +36,12 @@
 
 		<activity
 			android:name=".DriveAcceptActivity"
-			android:label="@string/title_activity_drive_accept" />
+			android:label="@string/title_activity_drive_accept" android:noHistory="true" />
 		<activity
 			android:name=".CurrentDrive"
 			android:label="@string/title_activity_current_drive"
-			android:theme="@style/AppTheme.NoActionBar"></activity>
+			android:theme="@style/AppTheme.NoActionBar"
+			android:noHistory="true" ></activity>
 	</application>
 
 </manifest>

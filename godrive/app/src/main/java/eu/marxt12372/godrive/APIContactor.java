@@ -47,10 +47,23 @@ public class APIContactor
 
 	public static void cancelCurrentDrive()
 	{
+		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=2";
+		String string = sendRequest(uri);
 	}
 
 	public static void acceptCurrentDrive()
 	{
+		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=1";
+		String string = sendRequest(uri);
+		if(string.equals("success"))
+		{
+			Intent intent = new Intent(MainActivity.context, CurrentDrive.class);
+			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			MainActivity.context.startActivity(intent);
+		}
+		else if(string.equals("fail"))
+		{
+		}
 	}
 
 	public static boolean attemptLogin(String username, String password)
