@@ -6,6 +6,18 @@
 	android:layout_height="match_parent"
 	tools:context="eu.marxt12372.godrive.CurrentDrive">
 
+	<TextView
+		android:id="@+id/current_drive_text"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="8dp"
+		android:gravity="center"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toTopOf="drive_end" />
 
 	<Button
 		android:id="@+id/drive_cancel"
@@ -16,6 +28,18 @@
 		android:layout_marginStart="8dp"
 		android:text="@string/drive_cancel"
 		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/drive_end"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="8dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginStart="8dp"
+		android:text="@string/end_drive"
+		app:layout_constraintBottom_toTopOf="@+id/drive_cancel"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

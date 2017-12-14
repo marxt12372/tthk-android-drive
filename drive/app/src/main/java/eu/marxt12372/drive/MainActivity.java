@@ -40,6 +40,7 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.InputStream;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
@@ -90,38 +91,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 		findgps.setOnClickListener(new View.OnClickListener() {
 			@Override
-			public void onClick(View view) {
-			try {
-				LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
-				if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
-				{
-					LocationListener locationListener = new LocationListener() {
-						public void onLocationChanged(Location location) {
-							setCameraPosition(location, 17f);
+			public void onClick(View view)
+			{
+				try {
+					LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+					if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
+					{
+						List<String> providers = locationManager.getProviders(true);
+						Location bestLocation = null;
+						for (String provider : providers) {
+							Location l = locationManager.getLastKnownLocation(provider);
+							if (l == null) {
+								continue;
+							}
+							if (bestLocation == null || l.getAccuracy() < bestLocation.getAccuracy()) {
+								bestLocation = l;
+							}
 						}
+						setCameraPosition(bestLocation, 17f);
 
-						public void onStatusChanged(String provider, int status, Bundle extras) {
-						}
-
-						public void onProviderEnabled(String provider) {
-						}
-
-						public void onProviderDisabled(String provider) {
-						}
-					};
-
-					//locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
-					Criteria crit = new Criteria();
-					crit.setAccuracy(Criteria.ACCURACY_FINE);
-					locationManager.requestSingleUpdate(crit, locationListener, null);
-					pickup_location_marker.setVisibility(ImageView.INVISIBLE);
-					spinner_webview.setVisibility(ImageView.VISIBLE);
+						pickup_location_marker.setVisibility(ImageView.INVISIBLE);
+						spinner_webview.setVisibility(ImageView.VISIBLE);
+					}
 				}
-
-			}
-			catch (SecurityException e) {
-				e.printStackTrace();
-			}
+				catch (SecurityException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 

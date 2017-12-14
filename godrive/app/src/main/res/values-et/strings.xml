@@ -17,4 +17,5 @@
 	<string name="drive_cancel">Katkesta sõit</string>
 	<string name="title_activity_current_drive">Hetkene Klient</string>
 	<string name="wait_for_client">Palun oota kuni klient vajab taksot.</string>
+	<string name="end_drive">Lõpeta Sõit</string>
 </resources>

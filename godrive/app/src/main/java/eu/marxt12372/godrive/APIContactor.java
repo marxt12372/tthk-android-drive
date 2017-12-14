@@ -51,7 +51,13 @@ public class APIContactor
 		String string = sendRequest(uri);
 	}
 
-	public static void acceptCurrentDrive()
+	public static void endCurrentDrive()
+	{
+		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=3";
+		String string = sendRequest(uri);
+	}
+
+	public static void acceptCurrentDrive(float lat, float lng)
 	{
 		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=1";
 		String string = sendRequest(uri);
@@ -59,6 +65,8 @@ public class APIContactor
 		{
 			Intent intent = new Intent(MainActivity.context, CurrentDrive.class);
 			intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			intent.putExtra("drive_lat", lat);
+			intent.putExtra("drive_lng", lng);
 			MainActivity.context.startActivity(intent);
 		}
 		else if(string.equals("fail"))
