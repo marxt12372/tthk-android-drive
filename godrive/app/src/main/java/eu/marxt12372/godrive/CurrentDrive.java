@@ -20,6 +20,7 @@ public class CurrentDrive extends AppCompatActivity {
 	TextView current_drive_text;
 	float markerLocationLat;
 	float markerLocationLng;
+	int driveStatus;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class CurrentDrive extends AppCompatActivity {
 		drive_cancel = (Button) findViewById(R.id.drive_cancel);
 		drive_end = (Button) findViewById(R.id.drive_end);
 		current_drive_text = (TextView) findViewById(R.id.current_drive_text);
+		driveStatus = 3;
 
 		Geocoder geocoder;
 		List<Address> addresses;
@@ -65,8 +67,17 @@ public class CurrentDrive extends AppCompatActivity {
 		drive_end.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View view) {
-				APIContactor.endCurrentDrive();
-				finish();
+				if(driveStatus == 3)
+				{
+					drive_end.setText(R.string.end_drive);
+					driveStatus = 4;
+					APIContactor.clientPickup();
+				}
+				else if(driveStatus == 4)
+				{
+					APIContactor.endCurrentDrive();
+					finish();
+				}
 			}
 		});
 	}

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
 		{
 			Log.i("Main", "Ootame gepsu järgi");
 			try {
-				Thread.sleep(1000);
+				Thread.sleep(10000);
 			}
 			catch(InterruptedException e)
 			{
