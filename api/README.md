@@ -5,6 +5,7 @@ S&otilde;idu Staatused:
 <li>2 - S&otilde;idutajale info saadetud.</li>
 <li>3 - S&otilde;idutaja on s&otilde;idu vastu v&otilde;tnud ja tema poole liikuma hakanud</li>
 <li>4 - S&otilde;idutaja on kohale j&otilde;udnud ja kliendi peale v&otilde;tnud</li>
-<li>998 - S&otilde;it on katkestatud errori t&otilde;ttu</li>
+<li>997 - S&otilde;it on katkestatud errori t&otilde;ttu. Kliendile pole teadet saadetud</li>
+<li>998 - S&otilde;it on katkestatud errori t&otilde;ttu. Kliendile on teade saadetud</li>
 <li>999 - S&otilde;it on l&otilde;petatud</li>
 </ul>
