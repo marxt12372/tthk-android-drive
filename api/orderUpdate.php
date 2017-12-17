@@ -46,8 +46,22 @@ if($query->num_rows == 1)
 			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '0', `driversTryed` = '" . $list . "' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
 		}
 	}
-	//TODO: Uuenda orderite asju. Nt:
-	//TODO: Kui sÃit on l6ppenud, katkestatud, s6itja peale v6etud
+	else if($type == 3) //S6it on l6ppenud
+	{
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND (`staatus` != '999' AND `staatus` != '998')");
+		if($query->num_rows > 0)
+		{
+			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '999' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
+		}
+	}
+	else if($type == 4) //S6itja on peale v6etud
+	{
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '3'");
+		if($query->num_rows > 0)
+		{
+			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '4' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
+		}
+	}
 }
 
 $mysqli->close();
