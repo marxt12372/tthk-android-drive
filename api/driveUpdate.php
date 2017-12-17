@@ -13,7 +13,7 @@ $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad WHERE `ap
 if($query->num_rows == 1)
 {
 	$kasutaja = $query->fetch_assoc();
-	$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `kasutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` NOT IN (998,999)");
+	$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `kasutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` NOT IN (997,998,999)");
 	if($query->num_rows > 0)
 	{
 		$andmed = $query->fetch_assoc();

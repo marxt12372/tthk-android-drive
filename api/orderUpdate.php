@@ -30,7 +30,7 @@ if($query->num_rows == 1)
 	}
 	else if($type == 2) //S6it on katkestatud
 	{
-		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND (`staatus` != '999' AND `staatus` != '998')");
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` NOT IN (997,998,999)");
 		if($query->num_rows > 0)
 		{
 			$s6it = $query->fetch_assoc();
@@ -48,9 +48,10 @@ if($query->num_rows == 1)
 	}
 	else if($type == 3) //S6it on l6ppenud
 	{
-		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND (`staatus` != '999' AND `staatus` != '998')");
+		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` NOT IN (997,998,999)");
 		if($query->num_rows > 0)
 		{
+			$s6it = $query->fetch_assoc();
 			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '999' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
 		}
 	}
@@ -59,6 +60,7 @@ if($query->num_rows == 1)
 		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '3'");
 		if($query->num_rows > 0)
 		{
+			$s6it = $query->fetch_assoc();
 			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '4' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
 		}
 	}

@@ -12,13 +12,17 @@ $time = time() - (60*60*24);
 $query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "kasutajad WHERE `apitoken` = '" . $key . "' AND `apilastuse` > '" . $time . "' LIMIT 1");
 if($query->num_rows == 1)
 {
-	$row = $query->fetch_assoc();
-	$lat = $mysqli->escape_string($_GET['lat']);
-	$lng = $mysqli->escape_string($_GET['lng']);
+	$andmed = $query->fetch_assoc();
+	$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `kasutaja` = '" . $andmed['sqlid'] . "' AND `staatus` NOT IN (997,998,999)");
+	if($query->num_rows == 0)
+	{
+		$lat = $mysqli->escape_string($_GET['lat']);
+		$lng = $mysqli->escape_string($_GET['lng']);
 
-	$query2 = $mysqli->query("INSERT INTO " . $mysql['pref'] . "soidud (`kasutaja`, `s6idutaja`, `alguslat`, `alguslng`, `lopplat`, `lopplng`, `staatus`, `driversTryed`) VALUES ('" . $row['sqlid'] . "', '0', '" . $lat . "', '" . $lng . "', '0.0', '0.0', '0', '')");
+		$query2 = $mysqli->query("INSERT INTO " . $mysql['pref'] . "soidud (`kasutaja`, `s6idutaja`, `alguslat`, `alguslng`, `lopplat`, `lopplng`, `staatus`, `driversTryed`) VALUES ('" . $andmed['sqlid'] . "', '0', '" . $lat . "', '" . $lng . "', '0.0', '0.0', '0', '')");
 
-	echo 'driver_requested';
+		echo 'driver_requested';
+	}
 }
 else
 {
