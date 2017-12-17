@@ -3,13 +3,11 @@ package eu.marxt12372.godrive;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
-import android.location.Location;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,22 +15,19 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-import eu.marxt12372.godrive.R;
-
 public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyCallback {
 
-	private GoogleMap mMap;
+	GoogleMap mMap;
 	private float markerLocationLat;
 	private float markerLocationLng;
 
-	private Button drive_accept;
-	private Button drive_deny;
-	private TextView drive_accept_text;
+	Button drive_accept;
+	Button drive_deny;
+	TextView drive_accept_text;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -91,16 +86,16 @@ public class DriveAcceptActivity extends FragmentActivity implements OnMapReadyC
 	public void onMapReady(GoogleMap googleMap) {
 		mMap = googleMap;
 
-		//TODO: Lisa marker sinna kus teda oodatakse....
-		// Add a marker in Sydney and move the camera
-		LatLng marker = new LatLng(markerLocationLat, markerLocationLng);
-		MarkerOptions murker = new MarkerOptions();
-		murker.position(marker);
-		murker.title("Klient");
-		mMap.addMarker(murker);
-		mMap.moveCamera(CameraUpdateFactory.newLatLng(marker));
-		CameraUpdate zoom = CameraUpdateFactory.zoomTo(15f);
-		mMap.animateCamera(zoom);
+		LatLng klientpos = new LatLng(markerLocationLat, markerLocationLng);
+		MarkerOptions marker = new MarkerOptions();
+		marker.position(klientpos);
+		marker.title("Klient");
+		mMap.addMarker(marker);
+		mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(klientpos, 15f));
+
+		/*CameraUpdate zoom = CameraUpdateFactory.zoomTo(15f);
+		mMap.animateCamera(zoom);*/
+
 		/*LatLng sydney = new LatLng(-34, 151);
 		mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
 		mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/

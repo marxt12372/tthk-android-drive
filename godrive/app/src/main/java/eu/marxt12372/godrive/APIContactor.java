@@ -1,6 +1,7 @@
 package eu.marxt12372.godrive;
 
 
+import android.app.Application;
 import android.content.Intent;
 import android.os.HandlerThread;
 import android.util.Log;

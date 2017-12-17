@@ -10,30 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="530c9b79-95cd-4594-bb7e-b774034a1e22" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/classAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/javaCompile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/javaCompile/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/../godrive/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/drive/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../godrive/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java" afterPath="$PROJECT_DIR$/../godrive/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/res/layout/activity_current_drive.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/layout/activity_current_drive.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/res/layout/activity_drive_accept_buttons.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/layout/activity_drive_accept_buttons.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/res/values-et/strings.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/values-et/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../godrive/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/../godrive/app/src/main/res/values/strings.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -2131,7 +2108,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282609321" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282681068" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2179,7 +2156,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282609321" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282681068" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2341,7 +2318,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282609322" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513282681069" />
       </method>
     </configuration>
     <list size="1">
