@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	TextView nav_header_text;
 	WebView spinner_webview;
 	ImageView pickup_location_marker;
+	LocationManager locationManager;
 
 	Button findgps;
 	Button orderTaxi;
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			public void onClick(View view)
 			{
 				try {
-					LocationManager locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
+					locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 					if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
 					{
 						List<String> providers = locationManager.getProviders(true);
@@ -136,11 +137,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 	{
 		if(loc != null)
 		{
-			CameraUpdate center = CameraUpdateFactory.newLatLng(new LatLng(loc.getLatitude(), loc.getLongitude()));
-			CameraUpdate zoom = CameraUpdateFactory.zoomTo(zoomlvl);
+			CameraUpdate center = CameraUpdateFactory.newLatLngZoom(new LatLng(loc.getLatitude(), loc.getLongitude()), zoomlvl);
+			//CameraUpdate zoom = CameraUpdateFactory.zoomTo(zoomlvl);
 
 			mMap.moveCamera(center);
-			mMap.animateCamera(zoom);
+			//mMap.animateCamera(zoom);
 		}
 		spinner_webview.setVisibility(ImageView.INVISIBLE);
 		pickup_location_marker.setVisibility(ImageView.VISIBLE);

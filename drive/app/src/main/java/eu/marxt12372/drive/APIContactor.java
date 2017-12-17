@@ -70,7 +70,7 @@ public class APIContactor
 		return data[2];
 	}
 
-	public static String sendRequest(String uri)
+	private static String sendRequest(String uri)
 	{
 		out = "wait";
 		Thread networkThread = new NetworkThread(uri);

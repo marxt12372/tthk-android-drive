@@ -9,13 +9,20 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40f8e6e0-1ce8-4f2b-9ab1-8b6ef12a4fdd" name="Default" comment="Tehtud paar">
+    <list default="true" id="40f8e6e0-1ce8-4f2b-9ab1-8b6ef12a4fdd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/fileHashes/fileHashes.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/classAnalysis.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/classAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/javaCompile.lock" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/javaCompile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/taskHistory.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/javaCompile/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/taskHistory.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/../drive/.gradle/4.1/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../drive/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../drive/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/app/src/main/java/eu/marxt12372/drive/APIContactor.java" afterPath="$PROJECT_DIR$/../drive/app/src/main/java/eu/marxt12372/drive/APIContactor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../drive/app/src/main/java/eu/marxt12372/drive/MainActivity.java" afterPath="$PROJECT_DIR$/../drive/app/src/main/java/eu/marxt12372/drive/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/APIContactor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,17 +59,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DriveAcceptActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DriveAcceptActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="864">
@@ -70,6 +77,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GPSThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/GPSThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-238">
-              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1781#1920#0" expanded="true" />
@@ -2246,7 +2263,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513507777159" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513509621295" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2294,7 +2311,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513507777159" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513509621295" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2477,7 +2494,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513507777160" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1513509621297" />
       </method>
     </configuration>
     <list size="1">
@@ -2597,12 +2614,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513282645358</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="bugfix">
+      <created>1513507787418</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1513507787418</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="27" width="1922" height="1054" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2657,7 +2680,8 @@
     <MESSAGE value="Uuendused" />
     <MESSAGE value="Tehtud sõidu katkestamine jms" />
     <MESSAGE value="Tehtud sõidu lõpetamise nupp, lisatud aadressid kuhu minema peab jms." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tehtud sõidu lõpetamise nupp, lisatud aadressid kuhu minema peab jms." />
+    <MESSAGE value="bugfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2958,7 +2982,7 @@
         <state relative-caret-position="17">
           <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="44" />
           <folding>
-            <element signature="e#843#868#0" expanded="true" />
+            <element signature="e#843#868#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3007,13 +3031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/GPSThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="android-dummy:///home/mart/AndroidStudioProjects/tthk-android-drive/godrive/app/Translations Editor">
       <provider selected="true" editor-type-id="string-resource-editor">
         <state />
@@ -3051,10 +3068,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="32" column="59" lean-forward="true" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+        <state relative-caret-position="864">
+          <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/GPSThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="38" column="17" lean-forward="true" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -3062,7 +3089,7 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/CurrentDrive.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
-          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1781#1920#0" expanded="true" />
@@ -3073,13 +3100,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/DriveAcceptActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/eu/marxt12372/godrive/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>

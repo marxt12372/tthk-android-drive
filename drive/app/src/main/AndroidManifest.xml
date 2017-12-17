@@ -8,7 +8,7 @@
 		 location permissions for the 'MyLocation' functionality.
     -->
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.INTERNET" />
 
 	<application
@@ -41,6 +41,7 @@
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
+
 		<activity
 			android:name=".MyDrives"
 			android:label="@string/title_activity_my_drives"
@@ -48,15 +49,15 @@
 		<activity
 			android:name=".MyAccount"
 			android:label="@string/title_activity_my_account"
-			android:theme="@style/AppTheme.NoActionBar"></activity>
+			android:theme="@style/AppTheme.NoActionBar" />
 		<activity
 			android:name=".LoginActivity"
 			android:label="@string/title_activity_login"
-			android:theme="@style/AppTheme.NoActionBar"></activity>
+			android:theme="@style/AppTheme.NoActionBar" />
 		<activity
 			android:name=".RegisterActivity"
 			android:label="@string/title_activity_register"
-			android:theme="@style/AppTheme.NoActionBar"></activity>
+			android:theme="@style/AppTheme.NoActionBar" />
 	</application>
 
 </manifest>
