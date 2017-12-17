@@ -28,7 +28,7 @@ if($query->num_rows == 1)
 			echo 'fail';
 		}
 	}
-	else if($type == 2) //S6it on katkestatud/Mitte vastu v6etud
+	else if($type == 2) //S6it on katkestatud
 	{
 		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND (`staatus` != '999' AND `staatus` != '998')");
 		if($query->num_rows > 0)
@@ -54,7 +54,7 @@ if($query->num_rows == 1)
 			$mysqli->query("UPDATE " . $mysql['pref'] . "soidud SET `staatus` = '999' WHERE `sqlid` = '" . $s6it['sqlid'] . "'");
 		}
 	}
-	else if($type == 4) //S6itja on peale v6etud
+	else if($type == 4) //Klient on peale v6etud
 	{
 		$query = $mysqli->query("SELECT * FROM " . $mysql['pref'] . "soidud WHERE `s6idutaja` = '" . $kasutaja['sqlid'] . "' AND `staatus` = '3'");
 		if($query->num_rows > 0)
