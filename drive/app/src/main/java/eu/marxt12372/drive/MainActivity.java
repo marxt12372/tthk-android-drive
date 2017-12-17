@@ -44,11 +44,13 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
+	static Thread updateThread = new UpdatePuller();
+	public static Context context;
 	private GoogleMap mMap;
 	ImageView nav_header_picture;
 	TextView nav_header_text;
-	WebView spinner_webview;
-	ImageView pickup_location_marker;
+	static WebView spinner_webview;
+	static ImageView pickup_location_marker;
 	LocationManager locationManager;
 
 	Button findgps;
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		setContentView(R.layout.activity_main);
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
+
+		context = getApplicationContext();
 
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -127,10 +131,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			double mylat = mMap.getCameraPosition().target.latitude;
 			double mylng = mMap.getCameraPosition().target.longitude;
 			APIContactor.orderTaxi(mylat, mylng);
+			pickup_location_marker.setVisibility(ImageView.INVISIBLE);
+			spinner_webview.setVisibility(ImageView.VISIBLE);
 			//TODO: Näidata laadimist ja õelda, kas sõitja leiti või mitte.
 			Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
 			}
 		});
+
+		updateThread.start();
+	}
+
+	public static void hideLoading()
+	{
+		spinner_webview.setVisibility(ImageView.INVISIBLE);
+		pickup_location_marker.setVisibility(ImageView.VISIBLE);
 	}
 
 	public void setCameraPosition(Location loc, float zoomlvl)

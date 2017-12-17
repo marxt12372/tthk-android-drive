@@ -3,6 +3,7 @@ package eu.marxt12372.drive;
 
 import android.os.HandlerThread;
 import android.util.Log;
+import android.widget.ImageView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +21,20 @@ public class APIContactor
 
 	public APIContactor()
 	{
+	}
+
+	public static void pullUpdates()
+	{
+		String uri = APIUrl + "/driveUpdate.php?apikey=" + apiToken;
+		String string = sendRequest(uri);
+		if(string.contains("driver_found"))
+		{
+			MainActivity.hideLoading();
+		}
+		else if(string.contains("driver_cancel"))
+		{
+			MainActivity.hideLoading();
+		}
 	}
 
 	public static void orderTaxi(double lat, double lng)
