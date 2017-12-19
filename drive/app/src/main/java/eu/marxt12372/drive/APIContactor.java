@@ -1,8 +1,13 @@
 package eu.marxt12372.drive;
 
 
+import android.app.Activity;
+import android.os.Handler;
 import android.os.HandlerThread;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
+import android.widget.ImageView;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,6 +17,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.CountDownLatch;
 
+import static eu.marxt12372.drive.MainActivity.hideLoading;
+
 public class APIContactor
 {
 	public static String apiToken = "";
@@ -20,6 +27,22 @@ public class APIContactor
 
 	public APIContactor()
 	{
+	}
+
+	public static void pullUpdates()
+	{
+		String uri = APIUrl + "/driveUpdate.php?apikey=" + apiToken;
+		String string = sendRequest(uri);
+		if(string.contains("driver_found"))
+		{
+			Message message = MainActivity.mHandler.obtainMessage(1,"hideLoader");
+			message.sendToTarget();
+		}
+		else if(string.contains("driver_cancel"))
+		{
+			Message message = MainActivity.mHandler.obtainMessage(1,"hideLoader");
+			message.sendToTarget();
+		}
 	}
 
 	public static void orderTaxi(double lat, double lng)

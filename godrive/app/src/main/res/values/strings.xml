@@ -17,4 +17,5 @@
 	<string name="drive_cancel">Cancel Drive</string>
 	<string name="wait_for_client">Please wait for a client request to come in.</string>
 	<string name="end_drive">End Drive</string>
+	<string name="client_pickup">Client picked up</string>
 </resources>

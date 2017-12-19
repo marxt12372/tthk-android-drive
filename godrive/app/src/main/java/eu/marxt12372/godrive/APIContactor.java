@@ -46,6 +46,12 @@ public class APIContactor
 		}
 	}
 
+	public static void clientPickup()
+	{
+		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=4";
+		String string = sendRequest(uri);
+	}
+
 	public static void cancelCurrentDrive()
 	{
 		String uri = APIUrl + "/orderUpdate.php?apikey=" + apiToken + "&type=2";

@@ -57,11 +57,12 @@ public class MapUpdaterThread extends Thread
 						}
 					}
 				}
+				APIContactor.pullUpdates();
 			}});
 
 			try
 			{
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 			}
 			catch(InterruptedException e)
 			{

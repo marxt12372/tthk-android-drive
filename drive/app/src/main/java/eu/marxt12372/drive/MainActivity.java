@@ -13,7 +13,9 @@ import android.location.LocationManager;
 import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Looper;
+import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.util.Log;
@@ -44,12 +46,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, OnMapReadyCallback {
 
+	public static Context context;
 	private GoogleMap mMap;
 	ImageView nav_header_picture;
 	TextView nav_header_text;
-	WebView spinner_webview;
-	ImageView pickup_location_marker;
+	static WebView spinner_webview;
+	static ImageView pickup_location_marker;
 	LocationManager locationManager;
+	public static Handler mHandler;
 
 	Button findgps;
 	Button orderTaxi;
@@ -61,6 +65,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 		setSupportActionBar(toolbar);
 
+		context = getApplicationContext();
+
+		mHandler = new Handler(Looper.getMainLooper()) {
+			@Override
+			public void handleMessage(Message message)
+			{
+				if(message.what == 1 && message.obj.toString().equals("hideLoader"))
+				{
+					hideLoading();
+				}
+			}
+		};
+
 		DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 		ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
 		drawer.addDrawerListener(toggle);
@@ -69,10 +86,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 		NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 		navigationView.setNavigationItemSelectedListener(this);
 
-		View header=navigationView.getHeaderView(0);
+		View header = navigationView.getHeaderView(0);
 		nav_header_picture = (ImageView) header.findViewById(R.id.nav_header_picture);
 		nav_header_text = (TextView) header.findViewById(R.id.nav_header_text);
 		pickup_location_marker = (ImageView) findViewById(R.id.pickup_location_marker);
+
 		spinner_webview = (WebView) findViewById(R.id.spinner_webview);
 		spinner_webview.setBackgroundColor(Color.TRANSPARENT);
 		String html = "<html><head><style>@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }</style></head><body style=\"margin: 0;\">";
@@ -94,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			@Override
 			public void onClick(View view)
 			{
+				showLoading();
 				try {
 					locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 					if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
@@ -109,14 +128,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 								bestLocation = l;
 							}
 						}
-						setCameraPosition(bestLocation, 17f);
 
-						pickup_location_marker.setVisibility(ImageView.INVISIBLE);
-						spinner_webview.setVisibility(ImageView.VISIBLE);
+						setCameraPosition(bestLocation, 17f);
 					}
 				}
 				catch (SecurityException e) {
 					e.printStackTrace();
+					hideLoading();
 				}
 			}
 		});
@@ -127,10 +145,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			double mylat = mMap.getCameraPosition().target.latitude;
 			double mylng = mMap.getCameraPosition().target.longitude;
 			APIContactor.orderTaxi(mylat, mylng);
+			showLoading();
 			//TODO: Näidata laadimist ja õelda, kas sõitja leiti või mitte.
 			Log.i("ORDER_BTN", "Lat: " + mylat + ", Lng: " + mylng);
 			}
 		});
+	}
+
+	public static void showLoading()
+	{
+		pickup_location_marker.setVisibility(ImageView.INVISIBLE);
+		spinner_webview.setVisibility(ImageView.VISIBLE);
+	}
+
+	public static void hideLoading()
+	{
+		pickup_location_marker.setVisibility(ImageView.VISIBLE);
+		spinner_webview.setVisibility(ImageView.INVISIBLE);
 	}
 
 	public void setCameraPosition(Location loc, float zoomlvl)
@@ -143,8 +174,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			mMap.moveCamera(center);
 			//mMap.animateCamera(zoom);
 		}
-		spinner_webview.setVisibility(ImageView.INVISIBLE);
-		pickup_location_marker.setVisibility(ImageView.VISIBLE);
+		hideLoading();
 	}
 
 	public void login()
