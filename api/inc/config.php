@@ -7,7 +7,7 @@ if(!(defined('IN_API') || defined('IN_PAGE')))
 
 require_once 'functions.php';
 
-$mysql['host'] = '192.168.0.200';
+$mysql['host'] = 'localhost';
 $mysql['user'] = 'drive';
 $mysql['pass'] = 'drive';
 $mysql['base'] = 'drive';

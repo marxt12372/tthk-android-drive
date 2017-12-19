@@ -10,7 +10,7 @@ int main()
 		while(1)
 		{
 			//printf("Tere\n");
-			system("php /var/www/virtual/marxt12372.eu/htdocs/tthk-android-drive/api/cronUpdater.php");
+			system("php /var/www/marxt12372.eu/tthk-android-drive/api/cronUpdater.php");
 			sleep(5);
 		}
 	}
