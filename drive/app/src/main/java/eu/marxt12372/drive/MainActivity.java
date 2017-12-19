@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 			@Override
 			public void onClick(View view)
 			{
+				showLoading();
 				try {
 					locationManager = (LocationManager) getApplicationContext().getSystemService(Context.LOCATION_SERVICE);
 					if(locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER))
@@ -127,13 +128,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 								bestLocation = l;
 							}
 						}
-						setCameraPosition(bestLocation, 17f);
 
-						showLoading();
+						setCameraPosition(bestLocation, 17f);
 					}
 				}
 				catch (SecurityException e) {
 					e.printStackTrace();
+					hideLoading();
 				}
 			}
 		});
@@ -159,8 +160,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 	public static void hideLoading()
 	{
-		spinner_webview.setVisibility(ImageView.INVISIBLE);
 		pickup_location_marker.setVisibility(ImageView.VISIBLE);
+		spinner_webview.setVisibility(ImageView.INVISIBLE);
 	}
 
 	public void setCameraPosition(Location loc, float zoomlvl)
